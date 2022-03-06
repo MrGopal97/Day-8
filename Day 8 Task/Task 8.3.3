@@ -1,0 +1,23 @@
+// 1. Write a person class to hold all the details.
+class person {
+  constructor(Name, Email, Age, Weight) {
+    this.Name = Name;
+    this.Email = Email;
+    this.Age = Age;
+    this.Weight = Weight;
+  }
+  person_Name() {
+    return `This is ${this.Name}`;
+  }
+  person_Email() {
+    return `Email-id is ${this.Email}`;
+  }
+  person_Age() {
+    return `Age is ${this.Age}`;
+  }
+  static person_Weight() {
+    return `Weight is ${this.Weight}`;
+  }
+}
+const obj = new person("Tushar", "tushar@gamil.com", "26", "55");
+console.log(obj);
